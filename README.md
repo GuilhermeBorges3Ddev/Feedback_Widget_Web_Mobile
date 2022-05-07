@@ -1,9 +1,9 @@
 # NLW_RETURN
 Trail impulse
 
-* Reference:
+* After run npm install run the project using the following command:
 
-`https://efficient-sloth-d85.notion.site/Impulse-58f2daadb8e1433894420cbc57571087`
+`npm run dev`
 
 * To create a Vite.JS project:
 
@@ -21,3 +21,22 @@ Trail impulse
 * Install the accessibility library Headless UI (created by Tailwind CSS team):
 
 `npm install @headlessui/react`
+
+* For the screenshot area download the html2canvas package:
+`npm i html2canvas`
+
+* To do a personal style of form itens install the plugin:
+`npm install -D @tailwindcss/forms`
+
+* Then add these plugin inside the <u>tailwind.config.js</u>:
+```
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    // ...
+  ],
+}
+```
