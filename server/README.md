@@ -83,6 +83,22 @@
 `npm i express`
 `npm i --save-dev @types/express`
 
+* Prisma ORM installation and creation of schema.prisma:
+
+`npm i prisma -D`
+`npm i @prisma/client`
+`npx run prisma`
+
+* To create the tables on Prisma based on your schema:
+`npx prisma migrate dev`
+
+* To view the Prisma Studio
+`npx prisma studio`
+
+* For send an email after a Feedback insertion on our DB install nodemailer and his types:
+`npm install nodemailer`
+`npm install @types/nodemailer`
+
 *  In package.json has a script to run and watch the project, just run:
 
 `npm run dev`
