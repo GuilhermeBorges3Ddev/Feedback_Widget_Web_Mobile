@@ -107,7 +107,24 @@
   4) Interface Segregation Principle
   5) Dependency Inversion Principle
 ```
+* Installing Jest and running the initial config:
+`npm install jest -D`
+`npx jest --init`
+`npm install ts-node -D`
+`npm i @types/jest -D`
+
+* Installing a TS for JS compiler called SWC, which is faster than Babel:
+`npm i -D jest @swc/jest`
+
+* After install SWC insert into jest.config.ts the content bellow replacing "transform":
+```
+transform: {
+    "^.+\\.(t|j)sx?$": ["@swc/jest"],
+  },
+```
+
+* Now you can test the application using:
+`npm run test`
 
 *  In package.json has a script to run and watch the project, just run:
-
 `npm run dev`
