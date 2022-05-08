@@ -99,6 +99,15 @@
 `npm install nodemailer`
 `npm install @types/nodemailer`
 
+* Here we're using SOLID:
+```
+  1) Single Responsibility Principle
+  2) Open/Closed Principle
+  3) Liskov Substitution Principle
+  4) Interface Segregation Principle
+  5) Dependency Inversion Principle
+```
+
 *  In package.json has a script to run and watch the project, just run:
 
 `npm run dev`
