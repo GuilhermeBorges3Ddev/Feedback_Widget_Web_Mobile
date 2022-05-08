@@ -126,5 +126,9 @@ transform: {
 * Now you can test the application using:
 `npm run test`
 
+* I've installed Cors to communicate our backend with our frontend without headers restrictions:
+`npm i cors`
+`npm i @types/cors -D`
+
 *  In package.json has a script to run and watch the project, just run:
 `npm run dev`
