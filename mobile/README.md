@@ -26,7 +26,7 @@
 `expo install react-native-reanimated`
 `npm install react-native-gesture-handler@~2.1.0`
 
-*After we've to include on babel.config.js the following plugins:
+* After we've to include on babel.config.js the following plugins:
 ```
 module.exports = function(api) {
   api.cache(true);
