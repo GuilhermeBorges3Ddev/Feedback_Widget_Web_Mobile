@@ -1,4 +1,9 @@
-# Logs
+# Common folders to ignore of the tree systems: server, mobile and web
+node_modules
+package-lock.json
+.env
+
+# Logs to ignore
 logs
 *.log
 npm-debug.log*
@@ -7,15 +12,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-./server/.env
-./server/node_modules
+# Server files to ignore
 dist
+coverage
 dist-ssr
 *.local
 
+# Mobile files to ignore
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
 # Editor directories and files
-.vscode/*
+.vscode
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -24,3 +40,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# macOS
+.DS_Store
