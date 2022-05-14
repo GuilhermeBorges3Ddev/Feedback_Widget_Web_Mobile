@@ -72,7 +72,7 @@ DATABASE_URL="file:./dev.db"
 
 * After run these command to crete our dist/ output folder:
 
-`npx tsc`
+`npm run build`
 
 * Install Express and his types to make the HTTP routes system:
 
@@ -133,6 +133,10 @@ transform: {
 `npm i cors`
 `npm i @types/cors -D`
 
-*  In package.json has a script to run and watch the project, just run:
+* In package.json has a script to run and watch the project, just run:
 
 `npm run dev`
+
+* An alternative to the command above is run the server using /dist:
+
+`npm run start`
