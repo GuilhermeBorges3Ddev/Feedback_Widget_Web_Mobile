@@ -8,6 +8,10 @@
 
 ``npm create vite@latest``
 
+* Install axios as our client HTTP to make requests:
+
+`npm install axios`
+
 * Install Tailwind CSS as a dependency with PostCSS and init command:
 
 ``npm install -D tailwindcss postcss autoprefixer``
@@ -62,4 +66,9 @@ module.exports = {
     require('tailwind-scrollbar'),
   ],
 }
+```
+
+* On the deploy moment, if you wanna deploy the same web/ folder and add into a <b>.env.local</b> the following var:
+```
+VITE_API_URL=<YOUR-BACKEND-URL-AND-PORT>
 ```
