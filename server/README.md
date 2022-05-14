@@ -64,15 +64,11 @@
     ...
 ```
 
-* Install the accessibility library Headless UI (created by Tailwind CSS team):
+* Configure your .env into /src to make your server consume the correctly DB, example of .env:
 
-`npm install @headlessui/react`
-
-* For the screenshot area download the html2canvas package:
-`npm i html2canvas`
-
-* To do a personal style of form itens install the plugin:
-`npm install -D @tailwindcss/forms`
+```
+DATABASE_URL="file:./dev.db"
+```
 
 * After run these command to crete our dist/ output folder:
 
@@ -90,12 +86,15 @@
 `npx run prisma`
 
 * To create the tables on Prisma based on your schema:
+
 `npx prisma migrate dev`
 
 * To view the Prisma Studio
+
 `npx prisma studio`
 
 * For send an email after a Feedback insertion on our DB install nodemailer and his types:
+
 `npm install nodemailer`
 `npm install @types/nodemailer`
 
@@ -108,12 +107,14 @@
   5) Dependency Inversion Principle
 ```
 * Installing Jest and running the initial config:
+
 `npm install jest -D`
 `npx jest --init`
 `npm install ts-node -D`
 `npm i @types/jest -D`
 
 * Installing a TS for JS compiler called SWC, which is faster than Babel:
+
 `npm i -D jest @swc/jest`
 
 * After install SWC insert into jest.config.ts the content bellow replacing "transform":
@@ -124,11 +125,14 @@ transform: {
 ```
 
 * Now you can test the application using:
+
 `npm run test`
 
 * I've installed Cors to communicate our backend with our frontend without headers restrictions:
+
 `npm i cors`
 `npm i @types/cors -D`
 
 *  In package.json has a script to run and watch the project, just run:
+
 `npm run dev`
