@@ -67,3 +67,8 @@ module.exports = {
   ],
 }
 ```
+
+* On the deploy moment, if you wanna deploy the same web/ folder and add into a <b>.env.local</b> the following var:
+```
+VITE_API_URL=<YOUR-BACKEND-URL-AND-PORT>
+```
