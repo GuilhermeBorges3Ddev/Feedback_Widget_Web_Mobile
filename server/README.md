@@ -85,9 +85,9 @@ DATABASE_URL="file:./dev.db"
 `npm i @prisma/client`
 `npx run prisma`
 
-* To create the tables on Prisma based on your schema:
+* To create the tables on Prisma based on your schema and start project:
 
-`npx prisma migrate dev`
+`npx prisma migrate deploy && npm run start`
 
 * To view the Prisma Studio
 
